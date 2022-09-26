@@ -38,11 +38,7 @@ export default function Home () {
   
 
   const handlePrint = () => {
-    const doc = new jsPDF({
-      orientation: 'portrait',
-      unit: 'mm',
-      format: 'a4',
-    })
+    const doc = new jsPDF as any 
 
     //create a new jsPDF instance and set the page size to A4 curriculum
     doc.setFontSize(24)
